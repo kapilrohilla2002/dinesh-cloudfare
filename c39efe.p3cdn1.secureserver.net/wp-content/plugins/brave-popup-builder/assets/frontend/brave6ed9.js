@@ -634,7 +634,7 @@ function brave_submit_form(event, settings, supressErrors=false){
                document.getElementById('brave_form_custom_content'+settings.formID).innerHTML = response.redirectMessage;
                var redirectTime = response.redirectAfter ? (response.redirectAfter *1000) : 6000;
                setTimeout(function() {
-                  window.location.href = response.redirectURL;
+                  // window.location.href = response.redirectURL;
                }, redirectTime);
             }
    
